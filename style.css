@@ -1,0 +1,104 @@
+:root{
+	--biggest-font-size: 100px;
+
+	--h1-font-size: 80px;
+	--h2-font-size: 60px;
+	--h3-font-size:26px;
+	--normal-p-font-size:18px ;
+	--small-font-size: 14px;
+
+
+	--container-width-pc:90%;
+	--container-width-phone:95%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+
+}
+
+
+main{
+   overflow-x: hidden;
+}
+body{
+	overflow-x: hidden;
+   background-color: #ffffff;
+   color: #fff;
+
+
+}
+img,svg,
+video{
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+h1,h2,h3{
+	font-weight: 600;
+}
+button,
+input {
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+.container{
+	max-width: var(--container-width-pc);
+	margin: 0 auto;
+}
+.section{
+	padding: 100px 0;
+}
+
+
+.global{
+   height: 100vh;
+
+}
+.global-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+}
+.global-container h1{
+   font-weight: 700;
+   font-size: 80px;
+   margin-bottom: 30px;
+   color: rgb(0, 0, 0);
+}
+.global-container p{
+   color: #000;
+   font-weight: 500;
+   font-size: 50px;
+   opacity: 0.6;
+}
+.global-bacround video{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   left: 0;
+   top: 0;
+   object-fit: cover;
+   z-index: -100;
+}
